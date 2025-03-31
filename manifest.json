@@ -3,9 +3,10 @@
   "name": "Search Commander",
   "version": "1.0",
   "description": "Custom search commands extension with editable shortcuts",
-  "permissions": ["tabs", "storage"],
+  "permissions": ["tabs", "storage", "activeTab", "scripting"],
+  "host_permissions": ["<all_urls>"],
   "action": {
-    "default_popup": "popup.html"
+    "default_icon": "icon.png"
   },
   "options_page": "options.html",
   "commands": {
@@ -13,7 +14,8 @@
       "suggested_key": {
         "default": "Alt+Shift+P",
         "mac": "Alt+Shift+P"
-      }
+      },
+      "description": "Open Search Commander"
     }
   },
   "omnibox": {
@@ -21,5 +23,11 @@
   },
   "background": {
     "service_worker": "background.js"
-  }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["overlay.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }
