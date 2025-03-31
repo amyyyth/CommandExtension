@@ -20,6 +20,7 @@ This browser extension allows users to perform quick searches and navigate websi
 4. Click "Load unpacked" and select the extension folder.
 
 ## Usage
+ ### Press Alt+Shift+P to open the command input
 ![Command input](https://github.com/user-attachments/assets/a565e051-8400-407b-b61f-6ab7f2684dee)
 ## Default Commands
 
