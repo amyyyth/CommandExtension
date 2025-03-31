@@ -1,7 +1,7 @@
 # Command & Search Browser Extension
 
 ## Background
-This is a very short weekend project that came out of frustration. I was using the browser and I felt like everytime i need to search for something on YouTube, I need to go to the site and then search for it. It was just too many keystrokes and I just went ahead and made an extension for chromium based browsers. Sadly, I use Arc browser and it does not support extensions fully, but I hope this comes in handy for someone out there.
+This is a very short weekend project that came out of frustration. I was using the browser and I felt like everytime i need to search for something on YouTube, I need to go to the site and then search for it. It was just too many keystrokes and I might be a bit too lazy for that. Hence, here we are now.
 
 ## Overview
 This browser extension allows users to perform quick searches and navigate websites using simple commands. Users can customize their own commands and search queries to fit their needs.
@@ -21,21 +21,51 @@ This browser extension allows users to perform quick searches and navigate websi
 
 ## Usage
 ![Command input](https://github.com/user-attachments/assets/a565e051-8400-407b-b61f-6ab7f2684dee)
+## Default Commands
 
-- **Keyboard Shortcut:** Use the keyboard shortcut `Alt+Shift+P` by default to launch the extension.
-- **Search Commands:** Type a search term followed by a flag, e.g., `AI research -g` to search on Google.
-- **Quick Links:** Type a flag alone, e.g., `-r`, to open Reddit.
-- **Homepage Navigation:** Enter a search engine flag without a query, e.g., `-g`, to go to Google’s homepage.
-- **Default Search:** If no command is recognized, it defaults to a Google search.
+### Search Commands  
+**Format:** `[query] [suffix]`  
+- `-g` → Google Search  
+- `-y` → YouTube Search  
+- `-gh` → GitHub Search  
+- `-w` → Wikipedia Search  
+- `-ym` → YouTube Music Search  
+- `-ddg` → DuckDuckGo Search  
+- `-b` → Bing Search  
+- `-a` → Amazon Search  
+- `-r` → Reddit Search  
+- `-imdb` → IMDb Search  
+- `-tw` → Twitter/X Search  
+- `-gi` → Google Images Search  
+
+### Quick Link Commands  
+**Format:** `[command]`  
+- `-r` → Reddit homepage  
+- `-t` → Twitter/X homepage  
+- `-m` → Gmail  
+- `-ch` → ChatGPT  
+- `-cl` → Claude.ai  
+- `-ds` → DeepSeek Chat  
+- `-n` → Netflix  
+- `-h` → Browser History  
+
+## Examples  
+```bash
+# Search commands
+"AI news -y"     # Search YouTube for "AI news"
+"cats -gi"       # Search Google Images for "cats"
+
+# Quick links
+"-m"             # Open Gmail
+"-ch"            # Open ChatGPT
+```
+
+## Default Search:
+ If no command is recognized, it defaults to a Google search.
 
 ## Customization
 - Go to the extension’s settings page to modify or add new search engines and quick links.
 - Flags should be unique and prefixed with `-`.
-
-## Development
-- Modify `popup.js` to adjust command behavior.
-- Modify `settings.js` to customize the settings page.
-- Update `manifest.json` if adding new permissions or features.
 
 ## Permissions
 - `storage`: To save user preferences.
