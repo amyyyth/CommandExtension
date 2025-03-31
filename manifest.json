@@ -15,5 +15,11 @@
         "mac": "Alt+Shift+P"
       }
     }
+  },
+  "omnibox": {
+    "keyword": "sc"
+  },
+  "background": {
+    "service_worker": "background.js"
   }
 }
