@@ -20,6 +20,10 @@ This browser extension allows users to perform quick searches and navigate websi
 4. Click "Load unpacked" and select the extension folder.
 
 ## Usage
+![Command input](demo1.gif)
+![Custom commands](demo2.gif)
+
+- **Keyboard Shortcut:** Use the keyboard shortcut `Alt+Shift+P` by default to launch the extension.
 - **Search Commands:** Type a search term followed by a flag, e.g., `AI research -g` to search on Google.
 - **Quick Links:** Type a flag alone, e.g., `-r`, to open Reddit.
 - **Homepage Navigation:** Enter a search engine flag without a query, e.g., `-g`, to go to Google’s homepage.
